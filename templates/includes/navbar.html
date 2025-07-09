@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+<nav>
+    <a href="#" class="menu-toggle">
+        <span class="menu-body"></span>
+        <span class="menu-body-bot"></span>
+    </a>
+    <div class="nav-links">
+        <button class="btn-primary">
+            <a href="{% url 'signup' %}">SignUp</a>
+        </button>
+        <button class="btn-primary">
+            <a href="{% url 'login' %}">LogIn</a>
+        </button>
+    </div>
+</nav>

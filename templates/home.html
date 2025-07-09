@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/core/home.css' %}">
+    <div class="btn-container">
+            <button class="btn-secondary"><a href="{% url 'discover' %}">Discover</a></button>
+            <button class="btn-secondary"><a href="{% url 'explore' %}">Explore</a></button>
+    </div>
+{% endblock %}

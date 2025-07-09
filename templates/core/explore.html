@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block title %}Explore{% endblock %}
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/core/explore.css' %}">
+
+<!-- HERO SECTION -->
+
+<section>
+    <div class="hero-treshold">
+        <span class="hero-block1"></span>
+        <span class="hero-block2">
+            <img src="{% static 'images/core/hero-image1.png' %}" alt="Hero Image" class="hero-image">
+        </span>
+        <span class="hero-block3">
+            <img src="{% static 'images/core/hero-image2.png' %}" alt="Hero Image" class="hero-image">
+        </span>
+        <span class="hero-block4">
+            <img src="{% static 'images/core/hero-image3.png' %}" alt="Hero Image" class="hero-image">
+        </span>
+    </div>
+    <div class="hero-section">
+        <h1>Smart Solutions for Modern Healthcare</h1>
+        <h2>Revolutionize hospital operations with a all-in-one platform.</h2>
+        <h3>From patient care to administrative workflows, DocLogic equips your medical teams with the tools to manage every aspect of your facility — efficiently, securely, and compassionately.</h3>
+    </div>
+</section>
+
+<!-- DISCVR SECTION -->
+<section>
+    <div class="discover-section">
+        <h1>Patient Management</h1>
+        <h2>Track, care for, and understand your patients better.<br>Built with healthcare professionals in mind.</h2>
+    </div>
+    <div class="discover-treshold">
+        <span class="discover-block">
+            <article>
+                <img src="{% static 'images/core/article-image1.png' %}" alt="Cardiology" class="discover-image">
+                <p>Comprehensive patient profiles</p>
+            </article>
+            <article>
+                <img src="{% static 'images/core/article-image2.png' %}" alt="Cardiology" class="discover-image">
+                <p>Care plans & health tracking</p>
+            </article>
+            <article>
+                <img src="{% static 'images/core/article-image3.png' %}" alt="Cardiology" class="discover-image">
+                <p>Room & equipment management</p>
+            </article>
+        </span>
+    </div>
+</section>
+
+<!-- TEAM SECTION -->
+<section id="team">
+    <div class="team-treshold">
+        <span class="team-block1">
+            <img src="{% static 'images/core/team-image1.png' %}" alt="Hero Image" class="hero-image">
+        </span>
+        <span class="team-block2">
+            <img src="{% static 'images/core/team-image2.png' %}" alt="Hero Image" class="hero-image">
+        </span>
+        <span class="team-block3">
+            <img src="{% static 'images/core/team-image3.png' %}" alt="Hero Image" class="hero-image">
+        </span>
+    </div>
+    <div class="team-section">
+        <h1>Delivering Trusted Healthcare Through<br>Innovation and Compassion</h1>
+        <h2>Empower your teams with smart tools</h2>
+        <div class="bulletpoints">
+            <div>
+                <ul>
+                    <li>Real-time data access & monitoring</li>
+                    <li>Secure patient information</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Collaborative care teams</li>
+                    <li>Comprehensive reporting</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% include 'includes/footer.html' %}
+{% endblock %}

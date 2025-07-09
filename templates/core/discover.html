@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Discover{% endblock %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/core/discover.css' %}">
+
+<!-- HERO SECTION -->
+
+<section>
+    <div class="hero-treshold">
+        <span class="hero-block1"></span>
+        <span class="hero-block2">
+            <img src="{% static 'images/core/hero-image1.png' %}" alt="Hero Image" class="hero-image">
+        </span>
+        <span class="hero-block3">
+            <img src="{% static 'images/core/hero-image2.png' %}" alt="Hero Image" class="hero-image">
+        </span>
+        <span class="hero-block4">
+            <img src="{% static 'images/core/hero-image3.png' %}" alt="Hero Image" class="hero-image">
+        </span>
+    </div>
+    <div class="hero-section">
+        <h1>Healing Starts Here — Compassionate Care for Every Step</h1>
+        <h2>Empower, heal, and connect with care that truly matters.</h2>
+        <h3>Enter a place of trust and healing at DocLogic, where every visit brings you closer to wellness. From state-of-the-art facilities to personalised treatments, we’re dedicated to provexceptional care for you and your loved ones.</h3>
+    </div>
+</section>
+
+<!-- DISCVR SECTION -->
+<section>
+    <div class="discover-section">
+        <h1>Excellence in Every Department</h1>
+        <h2>Explore advanced medical specialties — from cardiology to pediatrics — all under one roof.</h2>
+    </div>
+    <div class="discover-treshold">
+        <span class="discover-block">
+            <article>
+                <img src="{% static 'images/core/article-image1.png' %}" alt="Cardiology" class="discover-image">
+                <p>Inpatients & Outpatients</p>
+            </article>
+            <article>
+                <img src="{% static 'images/core/article-image2.png' %}" alt="Cardiology" class="discover-image">
+                <p>Pediatric & Maternity Patients</p>
+            </article>
+            <article>
+                <img src="{% static 'images/core/article-image3.png' %}" alt="Cardiology" class="discover-image">
+                <p>Inpatients & Outpatients</p>
+            </article>
+        </span>
+    </div>
+</section>
+
+<!-- TEAM SECTION -->
+<section id="team">
+    <div class="team-treshold">
+        <span class="team-block1">
+            <img src="{% static 'images/core/team-image1.png' %}" alt="Hero Image" class="hero-image">
+        </span>
+        <span class="team-block2">
+            <img src="{% static 'images/core/team-image2.png' %}" alt="Hero Image" class="hero-image">
+        </span>
+        <span class="team-block3">
+            <img src="{% static 'images/core/team-image3.png' %}" alt="Hero Image" class="hero-image">
+        </span>
+    </div>
+    <div class="team-section">
+        <h1>Healing Hands Behind Every Recovery</h1>
+        <h2>Our dedicated team delivers expert care with compassion and commitment.</h2>
+        <h3>At DocLogic, our doctors, nurses, and medical staff work tirelessly to ensure the well-being of every patient. From personalized treatments and continuous monitoring to emotional support and patient education, our team plays a vital role in creating a safe, supportive, and healing environment for patients and their families.</h3>
+    </div>
+</section>
+{% include 'includes/footer.html' %}
+{% endblock %}

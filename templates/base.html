@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        {% block head %}
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>{% block title %}DocLogic{% endblock %}</title>
+            <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+            <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        {% endblock %}
+    </head>
+    <body>
+        {% include "includes/navbar.html" %}
+        <main>
+            <link rel="stylesheet" href="{% static 'css/home.css' %}">
+            <div class="container">
+                <img src="{% static 'images/bg-landing.png' %}" alt="background-image" class="bg-image">
+                <div class="logo">
+                    <img src="{% static 'images/Logo.png' %}" alt="background-image">
+                </div>
+            </div>
+            {% block content %}{% endblock %}
+        </main>
+        <script src="{% static 'js/navbar.js' %}"></script>
+    </body>
+</html>
