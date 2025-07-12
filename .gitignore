@@ -49,5 +49,5 @@ htmlcov/
 *.swp
 
 *.swo
-.idea/
-/Users/emmanuelramos/Dev/ASSOFAC/Projects/DocLogic/code/rootkey.csv
+.idea/*.pyc
+__pycache__/
