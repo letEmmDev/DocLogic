@@ -48,4 +48,5 @@ htmlcov/
 # Other
 *.swp
 *.swo
-.idea/
+.idea/*.pyc
+__pycache__/
