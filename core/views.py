@@ -1,30 +1,19 @@
-from django.shortcuts import render, redirect
-from django.contrib.auth import login
-from .forms import CustomUserCreationForm
-## Import the customed form so it can be used in the signup view
+from django.urls import path
+from django.contrib.auth.views import LoginView, LogoutView
 
-# Create your views here.
-def home(request):
-    return render(request, 'home.html')
+from . import views
 
-## Registration views
-def signup(request):
-    if request.method == 'POST':
-        form = CustomUserCreationForm(request.POST, initial={'role': 'user'})
-        if form.is_valid():
-            print("Form is valid!")  # Debug
-            user = form.save()
-            print("User saved:", user)  # Debug
-            login(request, user)
-            return redirect('home')
-        else:
-            print("Form errors:", form.errors)  # Debug
-    else:
-        form = CustomUserCreationForm(initial={'role': 'user'})    
-    return render(request, 'core/registration/signup.html', {'form': form})
-
-## Landing page path 
-def discover(request):
-    return render(request, 'core/discover.html')
-def explore(request):
-    return render(request, 'core/explore.html')
+urlpatterns = [
+    path('', views.home, name='home'),
+    # Registration paths
+        # Login path
+    path('login', LoginView.as_view(template_name="core/registration/login.html"), name='login'),
+        # Signup path
+    path('signup', views.signup, name='signup'),
+        # Logout path
+    path("logout", LogoutView.as_view(next_page="login"), name="logout"),
+    
+    # Explore and discover paths
+    path('discover', views.discover, name='discover'),
+    path('explore', views.explore, name='explore'),
+]
