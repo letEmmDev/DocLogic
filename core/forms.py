@@ -6,7 +6,7 @@ from django_recaptcha.widgets import ReCaptchaV2Invisible
 class CustomUserCreationForm(forms.ModelForm):
     password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
     password2 = forms.CharField(label='Confirm Password', widget=forms.PasswordInput)
-    captcha = ReCaptchaField(widget=ReCaptchaV2Invisible())
+    captcha = ReCaptchaField()
 
     class Meta:
         model = CustomUser
