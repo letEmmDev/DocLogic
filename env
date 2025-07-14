@@ -1,0 +1,4 @@
+SECRET_KEY=django-insecure-g1#brw2z!i4b$5@7ihc5t)-5v+fa$+d)k@c3_b7cc+1mo+c^j6
+DB_PASSWORD=password
+RECAPTCHA_PUBLIC_KEY=6LdrkIIrAAAAAKKRE1KYAIE9qhk76C4g1Gmjwixu
+RECAPTCHA_PRIVATE_KEY=6LdrkIIrAAAAAHEbipwBKDoG_5wjASI6QgNL8qNz

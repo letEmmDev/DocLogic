@@ -34,6 +34,10 @@
             {{ form.password2 }}
             {{ form.password2.errors }}
         </div>
+        <div class="captcha-form">
+            {{ form.captcha }}
+            {{ form.captcha.errors }}
+        </div>
         <input type="hidden" name="role" value="user">
         <button type="submit" class="btn-primary">Valid</button>
     </form>

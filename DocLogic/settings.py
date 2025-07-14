@@ -11,17 +11,19 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
 import os
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+## Load environment variables from env file
+load_dotenv(BASE_DIR / "env")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-g1#brw2z!i4b$5@7ihc5t)-5v+fa$+d)k@c3_b7cc+1mo+c^j6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -41,6 +43,7 @@ INSTALLED_APPS = [
 
     #Custom apps
     'rest_framework',
+    'django_recaptcha',
     'core',
     'hospital',
     'patient_management',
@@ -86,7 +89,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'doclogic',
         'USER': 'emmanuelramos',
-        'PASSWORD': 'password',
+        'PASSWORD': os.getenv('DB_PASSWORD'),
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -143,3 +146,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # User model for authentification
 AUTH_USER_MODEL = 'core.CustomUser'
+
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = os.getenv('SECRET_KEY')
+
+## RE-captcha settings
+RECAPTCHA_PUBLIC_KEY = os.getenv('RECAPTCHA_PUBLIC_KEY')
+RECAPTCHA_PRIVATE_KEY = os.getenv('RECAPTCHA_PRIVATE_KEY')
+
+## Captcha return debug
+# print("RECAPTCHA_PUBLIC_KEY:", repr(RECAPTCHA_PUBLIC_KEY))
+# print("RECAPTCHA_PRIVATE_KEY:", repr(RECAPTCHA_PRIVATE_KEY))

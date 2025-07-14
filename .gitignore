@@ -50,3 +50,4 @@ htmlcov/
 *.swo
 .idea/*.pyc
 __pycache__/
+**/*.pyc
