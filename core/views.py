@@ -23,6 +23,9 @@ def signup(request):
         form = CustomUserCreationForm(initial={'role': 'user'})    
     return render(request, 'core/registration/signup.html', {'form': form})
 
+def auth_status(request):
+    return render(request, 'core/auth_status.html')
+
 ## Landing page path 
 def discover(request):
     return render(request, 'core/discover.html')

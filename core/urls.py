@@ -5,13 +5,16 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name='home'),
+    # Auth status path
+    path('auth-status/', views.auth_status, name='auth_status'),
+
     # Registration paths
         # Login path
     path('login', LoginView.as_view(template_name="core/registration/login.html"), name='login'),
         # Signup path
     path('signup', views.signup, name='signup'),
         # Logout path
-    path("logout", LogoutView.as_view(next_page="login"), name="logout"),
+    path('logout', LogoutView.as_view(next_page="login"), name='logout'),
     
     # Explore and discover paths
     path('discover', views.discover, name='discover'),

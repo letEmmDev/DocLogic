@@ -9,8 +9,13 @@
         <button class="btn-primary">
             <a href="{% url 'signup' %}">SignUp</a>
         </button>
-        <button class="btn-primary">
-            <a href="{% url 'login' %}">LogIn</a>
-        </button>
+        {% if user.is_authenticated %}
+            <form action="{% url 'logout' %}" method="post" style="display:inline;">
+                {% csrf_token %}
+                <button type="submit" class="btn-primary">Logout</button>
+            </form>
+        {% else %}
+            <a href="{% url 'login' %}" class="btn-primary">Login</a>
+        {% endif %}
     </div>
 </nav>
