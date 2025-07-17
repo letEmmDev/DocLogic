@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root {
+    --primary-blue: #004FA3;
+    --secondary-blue: #0075f2;
+    --accent-blue: #3396ff;
+
+    --primary-light-blue: #62BBE4;
+    --secondary-light-blue: #B1DDf1;
+    --accent-light-blue: #CBE8F6;
+
+    --primary-black: #1D1D20;
+    --secondary-black: #303036;
+    --accent-black: #60606C;
+
+    --black: #000;
+    --white: #FFFFFA;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background-color: var(--white);
+}
+h1{
+    font-size: 65px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 4% 0;
+    color: var(--white);
+}
+h2{
+    font-size: 39px;
+    font-family: 'Maitree', sans-serif;
+    margin: 4% 0;
+    color: var(--white);
+    font-weight:normal;
+    letter-spacing: -1px;
+}
+h3{
+    font-size: 24px;
+    font-family: 'Mulish', sans-serif;
+    margin: 2% 4%;
+    color: var(--white);
+    font-weight: 300;
+}
+p{
+    font-size: 24px;
+    color: var(--white);
+    font-family: 'Mulish',sans-serif;
+    font-weight: 300;
+}
+input {
+    color: var(--white);
+    font-size: 16px;
+}
+.container{
+    width: 100%;
+}
+main img{
+    width: 100%;
+    position: static;
+    margin: 0;
+    padding: 0;
+}
+.greetings{
+    display: flex;
+    position: absolute;
+    justify-self: anchor-center;
+    top: 7vh;
+}
+.logo{
+    z-index: 10;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    right: 20%;
+}
+.tagline{
+    display: flex;
+    position: absolute;
+    justify-self: anchor-center;
+    top: 25%;
+    text-align: center;
+}
+
+/* TRESHOLD */
+.hero-treshold{
+    width: 100%;
+    display: flex;
+    z-index: -1;
+}
+.hero-treshold span{
+    background-color: var(--primary-blue);
+}
+.hero-block1{
+    width: 15%;
+    height: 60vh;
+    border-radius: 0 0 0 50px;
+}
+.hero-block2{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 35%;
+    height: 80vh;
+    border-radius: 0 0 160px 160px;
+}
+.hero-block3{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 25%;
+    height: 95vh;
+    border-radius: 0 0 30px 170px;
+
+}
+.hero-block2 img, .hero-block3 img, .hero-block4 img{
+    width: 80%;
+    margin: 8% 0;
+}
+.hero-block4{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 25%;
+    height: 60vh;
+    border-radius: 0 0 50px 0;
+}

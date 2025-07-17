@@ -19,4 +19,9 @@ urlpatterns = [
     # Explore and discover paths
     path('discover', views.discover, name='discover'),
     path('explore', views.explore, name='explore'),
+
+    #Dashboard paths
+    path('dashboard/', views.dashboard, name='dashboard'),
+    path('dashboard-patient', views.dashboard_patient, name='dashboard_patient'),
+    path('dashboard-staff', views.dashboard_staff, name='dashboard_staff'),
 ]

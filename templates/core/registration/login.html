@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{% static 'css/core/registration/login.css' %}">
 <div class="form-container">
     <h1>Log In</h1>
-    <form method="post" action="{% url 'login' %}">
+    <form method="post" action="{% url 'login' %}?next={% url 'dashboard'%}">
         {% csrf_token %}
         <div class="email-form">
             <label for="mail">Mail</label>
