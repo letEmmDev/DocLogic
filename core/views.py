@@ -3,6 +3,7 @@ from django.contrib.auth import login
 from .forms import CustomUserCreationForm
 ## Import the customed form so it can be used in the signup view
 from .decorators import patient_required, staff_required
+from hospital.models import Department, Doctor, Hospital
 
 # Create your views here.
 def home(request):
@@ -36,7 +37,15 @@ def explore(request):
 ## Access based dashboard paths
 @patient_required
 def dashboard_patient(request):
-    return render(request, 'core/dashboard/dashboard_patient.html')
+    departments = Department.objects.all()
+    doctors = Doctor.objects.all()  # Or filter as needed for initial load
+    hospital = Hospital.objects.first()
+    return render(request, 'core/dashboard/dashboard_patient.html', {
+        'departments': departments,
+        'doctors': doctors,
+        'hospital': hospital,
+    })
+
 @staff_required
 def dashboard_staff(request):
     return render(request, 'core/dashboard/dashboard_staff.html')

@@ -1,3 +1,4 @@
+{% load django_htmx %}
 {% load static %}
 <!DOCTYPE html>
 <html>
@@ -9,6 +10,7 @@
         <link rel="stylesheet" href="{% static 'css/core/dashboard/navbar.css' %}">
         <link rel="stylesheet" href="{% static 'css/core/dashboard/base.css' %}">
     {% endblock %}
+    {% htmx_script %}
 </head>
 <body>
     {% include "core/dashboard/includes/navbar.html" %}

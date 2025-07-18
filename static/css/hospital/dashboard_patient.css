@@ -1,0 +1,155 @@
+    /* Doctor carousel styling */
+.doctor-carousel {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding: 2rem 0;
+    margin: 0 1em;
+}
+.doctor-card {
+    border-radius: 20px;
+    min-width: 15%;
+    max-width: 25%;
+    flex: 0 0 auto;
+    padding: 1.5rem;
+    text-align: start;
+    transition: box-shadow 0.5s;
+}
+.doctor-card:focus-within, .doctor-card:hover {
+    box-shadow: 0 4px 24px rgba(203,232,246,0.9);
+    background-color: var(--accent-blue);
+}
+.doctor-card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.doctor-info {
+    color: var(--black);
+}
+.doctor-name {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'Montserrat';
+}
+.doctor-specialization, .doctor-department {
+font-size: 24px;
+    color: var(--black);
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
+    /* Departement */
+.department-tabs {
+    display: flex;
+    justify-content: center;
+    margin: 10% 0 5% 0;
+}
+.department-tabs button[aria-selected="true"] {
+    background: var(--primary-light-blue);
+    color: var(--secondary-blue);
+    font-weight: bold;
+}
+.department-tabs button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    margin: 0 0.5rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: 'Mulish';
+}
+.department-tabs button:focus {
+    background-color: var(--secondary-blue);
+    color: var(--white);
+}
+
+/* Hospital  */
+.hospital-section {
+    padding: 4rem 2.5rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hospital-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.hospital-header img {
+width: 1110px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.hospital-header h1, .hospital-header h2, .hospital-header h3, .hospital-header p {
+    color: var(--black);
+    align-self: flex-start;
+    margin: 1% 0;
+}
+
+.hospital-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.hospital-services ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hospital-services li {
+    background: #3576e8;
+    color: var(--white);
+    border-radius: 18px;
+    padding: 1rem;
+    height: 200px;
+    min-width: 200px;
+    text-align: center;
+    align-content: center;
+    font-size: 16px;
+    font-family: 'Montserrat';
+}
+
+.hospital-stats {
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.stat-card {
+    background: #6bb6ff;
+    color: #fff;
+    border-radius: 14px;
+    padding: 1.2rem 2rem;
+    min-width: 140px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.stat-value {
+    font-size: 54px;
+    font-weight: 500;
+}
+.stat-label {
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-top: 0.3rem;
+}

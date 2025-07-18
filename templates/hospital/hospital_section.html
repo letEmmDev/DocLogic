@@ -1,0 +1,30 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/hospital/hospital_section.css' %}">
+<div class="hospital-header">
+    <img src="{% static 'images/hospital/hospital.png' %}" alt="Photo of {{ hospital.name }}">
+    <h2>{{ hospital.name }}</h2>
+    <p>{{ hospital.location }}</p>
+</div>
+<div class="hospital-services">
+    <ul>
+        {% for service in hospital.services.all %}
+        <li>
+            <strong>{{ service.name }}</strong>
+            {% if service.description %}<br>{{ service.description }}{% endif %}
+            {% if service.technologies %}<br><em>{{ service.technologies }}</em>{% endif %}
+        </li>
+        {% empty %}
+        <li>No services listed.</li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="hospital-stats">
+    <div class="stat-card">
+        <span class="stat-value">{{ hospital.active_staff }}</span>
+        <span class="stat-label">Active medical staff</span>
+    </div>
+    <div class="stat-card">
+        <span class="stat-value">{{ hospital.patient_capacity }}</span>
+        <span class="stat-label">Patient capacity</span>
+    </div>
+</div>

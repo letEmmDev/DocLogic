@@ -1,8 +1,26 @@
 {% extends "core/dashboard/base_dashboard.html" %}
-{% block content %}
-    {% block dashboard_content %}
-    {% endblock %}
-{% endblock %}
+{% load static %}
 {% block title %}
-    Patient Dashboard
+Patient Dashboard
+{% endblock %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/hospital/dashboard_patient.css' %}">
+    <div class="department-tabs" role="tablist" aria-label="Departments">
+        <button hx-get="{% url 'doctor_list' %}?department=all" hx-target="#doctor-cards" hx-swap="innerHTML" aria-selected="true" tabindex="0">All</button>
+        {% for dept in departments %}
+            <button
+                hx-get="{% url 'doctor_list' %}?department={{ dept.name|urlencode }}"
+                hx-target="#doctor-cards"
+                hx-swap="innerHTML"
+                aria-selected="false"
+                tabindex="0"
+            >{{ dept.name }}</button>
+        {% endfor %}
+    </div>
+    <div id="doctor-cards">
+        {% include "hospital/doctor_cards.html" with doctors=doctors %}
+    </div>
+    <div class="hospital-section">
+        {% include "hospital/hospital_section.html" with hospital=hospital %}
+    </div>
 {% endblock %}

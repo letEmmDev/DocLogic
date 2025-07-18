@@ -1,0 +1,20 @@
+<div class="doctor-carousel" role="region" aria-label="Doctors">
+    {% if doctors %}
+        {% for doctor in doctors %}
+        <div class="doctor-card" tabindex="0" aria-label="{{ doctor.user.name }} {{ doctor.user.surname }}">
+            {% if doctor.profile_picture %}
+                <img src="{{ doctor.profile_picture.url }}" alt="Photo of Dr. {{ doctor.user.name }} {{ doctor.user.surname }}">
+            {% endif %}
+            <div class="doctor-info">
+                <div class="doctor-name">{{ doctor.user.name }} {{ doctor.user.surname }}</div>
+                <div class="doctor-specialization">{{ doctor.specialization }}</div>
+                <div class="doctor-department">{{ doctor.department.name }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+        <div class="empty-state" role="status" aria-live="polite">
+            <p>No doctors found for this department.</p>
+        </div>
+    {% endif %}
+</div>

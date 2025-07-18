@@ -1,5 +1,6 @@
 asgiref==3.8.1
 Django==5.2.3
+django-htmx==1.23.2
 django-recaptcha==4.1.0
 django-rest-framework==0.1.0
 djangorestframework==3.16.0
