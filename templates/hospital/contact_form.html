@@ -1,0 +1,22 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/hospital/contact_form.css' %}">
+<div class="form-container">
+    <h1>Contact Us</h1>
+    <form method="post" action="{% url 'contact_form' %}">
+        {% csrf_token %}
+        <div class="email-form">
+            <label for="mail">Mail</label>
+            <input type="text" id="mail" name="username" placeholder="Your mail address..." required>
+        </div>
+
+        <div class="message-form">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+        </div>
+        <!-- submit button -->
+        <button type="submit" class="btn-secondary"> Valid </button>
+        {% if success %}
+            <p class="success-message">Your message has been sent!</p>
+        {% endif %}
+    </form>
+</div>
