@@ -4,6 +4,7 @@ from .forms import CustomUserCreationForm
 ## Import the customed form so it can be used in the signup view
 from .decorators import patient_required, staff_required
 from hospital.models import Department, Doctor, Hospital
+from patient_management.models import Patient
 
 # Create your views here.
 def home(request):
@@ -48,7 +49,12 @@ def dashboard_patient(request):
 
 @staff_required
 def dashboard_staff(request):
-    return render(request, 'core/dashboard/dashboard_staff.html')
+    patients = Patient.objects.all()
+    departments = Department.objects.all()
+    return render(request, 'core/dashboard/dashboard_staff.html', {
+        'patients': patients,
+        'departments': departments,
+    })
 
 ## Dashboard views
 def dashboard(request):

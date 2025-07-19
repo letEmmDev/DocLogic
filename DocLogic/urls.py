@@ -11,6 +11,8 @@ urlpatterns = [
     path('', include('core.urls')),
         ## Hospital app URLs
     path('hospital/', include('hospital.urls')),
+        ## Patient app URLs
+    path('patients_management/', include('patient_management.urls')),
 ]
 
 if settings.DEBUG:

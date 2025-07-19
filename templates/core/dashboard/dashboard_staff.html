@@ -2,7 +2,25 @@
 {% block title %}
     Staff Dashboard
 {% endblock %}
+{% load static %}
 {% block content %}
-    {% block dashboard_content %}
-    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/hospital/dashboard_patient.css' %}">
+    <div class="department-tabs" role="tablist" aria-label="Departments">
+        <button hx-get="{% url 'patient_list' %}?department=all" hx-target="#patient-cards" hx-swap="innerHTML" aria-selected="true" tabindex="0">All</button>
+        {% for dept in departments %}
+            <button
+                hx-get="{% url 'patient_list' %}?department={{ dept.name|urlencode }}"
+                hx-target="#patient-cards"
+                hx-swap="innerHTML"
+                aria-selected="false"
+                tabindex="0"
+            >{{ dept.name }}</button>
+        {% endfor %}
+    </div>
+    <div id="patient-cards">
+        {% include "patient_management/patient_cards.html" with patients=patients %}
+    </div>
+        <div class="patient-care">
+        <h1>{{ patients|length }} Patients</h1>
+    </div>
 {% endblock %}
