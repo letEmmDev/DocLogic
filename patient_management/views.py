@@ -5,6 +5,7 @@ from .models import Patient
 from hospital.models import Department
 from rest_framework import viewsets
 from .serializers import PatientReportSerializer
+from .forms import PatientsForm
 
 def patient_list(request):
     department_name = request.GET.get('department')
@@ -51,3 +52,8 @@ def patient_surgeries_form(request, patient_id):
 def patient_social_history_form(request, patient_id):
     patient = get_object_or_404(Patient, patient_id=patient_id)
     return render(request, "patient_management/partials/patient_social_history_form.html", {"patient": patient})
+
+def patients_form(request, patient_id):
+    patient = get_object_or_404(Patient, patient_id=patient_id)
+    form = PatientsForm(instance=patient)
+    return render(request, "patient_management/partials/patient_surgeries_form.html", {"form": form, "patient": patient})

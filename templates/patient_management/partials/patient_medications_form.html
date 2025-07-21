@@ -6,6 +6,7 @@
         hx-target="#selected-field"
         hx-swap="outerHTML"
     >
+        {% csrf_token %}
         <textarea name="patient_medications">{{ patient.patient_medications }}</textarea>
         <button type="submit" class="btn-secondary" style="margin: 5% 20%;">Validate</button>
     </form>
