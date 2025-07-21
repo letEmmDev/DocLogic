@@ -1,0 +1,29 @@
+{% load django_htmx %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        <title>{% block title %}Dashboard{% endblock %}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/core/dashboard/navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'css/core/dashboard/base.css' %}">
+    {% endblock %}
+    {% htmx_script %}
+</head>
+<body>
+    {% include "core/dashboard/includes/navbar.html" %}
+    <main>
+        <div class="tagline">
+            <h1>
+                The simplest way to support those who <br>
+                need you most
+            </h1>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </main>
+    {% include "core/dashboard/includes/footer.html" %}
+</body>
+</html>

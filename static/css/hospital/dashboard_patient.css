@@ -8,8 +8,8 @@
 }
 .doctor-card, .patient-card {
     border-radius: 20px;
-    min-width: 15%;
-    max-width: 25%;
+    min-width: 25vw;
+    max-width: 20vw;
     flex: 0 0 auto;
     padding: 1.5rem;
     text-align: start;
@@ -227,7 +227,55 @@ input, textarea {
     font-size: 24px;
     opacity: 0.7;
     border: none;
+    color: white;
 }
 .message-form{
+    margin: 5% 0;
+}
+.patient-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+.patient-report-container{
+    background-color: var(--primary-blue);
+}
+.patient-report-container h2 {
+    font-weight: 500;
+    font-size: 5rem;
+    margin: 0;
+    padding: 0 5%;
+}
+.patient-report-container p {
+    font-weight: 100;
+    margin: 0;
+    padding: 0 5%;
+}
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.modal-button{
+    background-color: var(--secondary-blue);
+    transition: background-color 0.3s ease;
+    font-family: "Mulish", sans-serif;
+    padding: 6.5rem 6rem;
+    border-radius: 30px;
+    margin: 3rem 3rem 0 0;
+    cursor: pointer;
+    font-size: 24px;
+    opacity: 0.7;
+    border: none;
+    color: white;
+}
+.modal-button:focus-within, .modal-button:hover {
+    box-shadow: 0 4px 24px rgba(203,232,246,0.9);
+    background-color: var(--accent-blue);
+}
+#selected-field {
+    padding: 0 5% 2% 5%;
+}
+#selected-field div{
     margin: 5% 0;
 }

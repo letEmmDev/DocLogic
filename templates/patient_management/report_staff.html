@@ -1,0 +1,58 @@
+{% extends "patient_management/base_patient.html" %}
+{% load static %}
+{% block title %}
+Patient Dashboard
+{% endblock %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/hospital/dashboard_patient.css' %}">
+    <!-- Patient profile picture -->
+    <img src="{{ patient.profile_picture.url }}" alt="{{ patient.name }}'s profile picture" class="patient-profile-picture">
+    <div class="patient-report-container">
+        <div class="patient-detail">
+            <div class="patient-data">
+                <h2>{{ patient.name }} {{ patient.surname }}</h2>
+                <p>{{ patient.age }} years old</p>
+            </div>
+            <div class="patient-location">
+                <img src="{{ patient.location_image.url }}" alt="{{ patient.name }}'s location" class="patient-location-image">
+            </div>
+        </div>
+        <div class="selected-field" id="selected-field">
+            {% include "patient_management/partials/patient_info_form.html" with patient=patient %}
+        </div>
+        <div class="modal-selector">
+            <div class="modal-button">
+                <button 
+                    hx-get="{% url 'patient_info_form' patient.id %}" 
+                    hx-target="#selected-field" 
+                    hx-swap="innerHTML"
+                ></button>
+                Patient Info
+            </div>
+            <div class="modal-button">
+                <button 
+                    hx-get="{% url 'patient_medications_form' patient.id %}" 
+                    hx-target="#selected-field" 
+                    hx-swap="innerHTML"
+                ></button>
+                Medication
+            </div>
+            <div class="modal-button">
+                <button 
+                    hx-get="{% url 'patient_surgeries_form' patient.id %}" 
+                    hx-target="#selected-field" 
+                    hx-swap="innerHTML"
+                ></button>
+                Past Surgeries
+            </div>
+            <div class="modal-button">
+                <button 
+                    hx-get="{% url 'patient_social_history_form' patient.id %}" 
+                    hx-target="#selected-field" 
+                    hx-swap="innerHTML"
+                ></button>
+                Social History
+            </div>
+        </div>
+    </div>
+{% endblock %}

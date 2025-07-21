@@ -1,16 +1,22 @@
 <div class="patient-carousel" role="region" aria-label="Patients">
     {% if patients %}
         {% for patient in patients %}
-        <div class="patient-card">
-            {% if patient.profile_picture %}
-                <img src="{{ patient.profile_picture.url }}" alt="Photo of {{ patient.user.name }} {{ patient.user.surname }}">
-            {% endif %}
-            <div class="patient-info">
-                <div class="patient-name">{{ patient.user.name }} {{ patient.user.surname }}</div>
-                <div class="patient-department">{{ patient.department.name }}</div>
-                <div class="patient-age">{{ patient.age }} years old</div>
+        <a     hx-get="{% url 'edit_patient' patient.patient_id %}" 
+                hx-target="#patient-modal-content" 
+                hx-swap="innerHTML"
+                class="patient-card-link"
+        >
+            <div class="patient-card">
+                {% if patient.profile_picture %}
+                    <img src="{{ patient.profile_picture.url }}" alt="Photo of {{ patient.user.name }} {{ patient.user.surname }}">
+                {% endif %}
+                <div class="patient-info">
+                    <div class="patient-name">{{ patient.user.name }} {{ patient.user.surname }}</div>
+                    <div class="patient-department">{{ patient.department.name }}</div>
+                    <div class="patient-age">{{ patient.age }} years old</div>
+                </div>
             </div>
-        </div>
+        </a>
         {% endfor %}
     {% else %}
         <div class="empty-state">

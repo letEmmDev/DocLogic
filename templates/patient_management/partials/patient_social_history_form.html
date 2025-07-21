@@ -1,0 +1,12 @@
+<div>
+    <h3>Patient Social History</h3>
+    <form
+        hx-put="/patients_management/api/patients-reports/{{ patient.patient_id }}/"
+        hx-trigger="submit"
+        hx-target="#selected-field"
+        hx-swap="outerHTML"
+    >
+        <textarea name="patient_social_history">{{ patient.patient_social_history }}</textarea>
+        <button type="submit" class="btn-secondary" style="margin: 5% 20%;">Validate</button>
+    </form>
+</div>

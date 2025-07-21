@@ -1,9 +1,10 @@
-from django.shortcuts import render
-
+from django.shortcuts import render, get_object_or_404
 # Create your views here.
 
 from .models import Patient 
 from hospital.models import Department
+from rest_framework import viewsets
+from .serializers import PatientReportSerializer
 
 def patient_list(request):
     department_name = request.GET.get('department')
@@ -24,3 +25,29 @@ def patient_list(request):
         "patients": patients,
         "departments": departments,
     })
+
+## Patient Report ViewSet
+class PatientReportViewSet(viewsets.ModelViewSet):
+    queryset = Patient.objects.all()
+    serializer_class = PatientReportSerializer
+
+def edit_patient(request, patient_id):
+    patient = get_object_or_404(Patient, patient_id=patient_id)
+    return render(request, "patient_management/edit_patient.html", {"patient": patient})
+
+## Partials for modal in the edit report page
+def patient_info_form(request, patient_id):
+    patient = get_object_or_404(Patient, patient_id=patient_id)
+    return render(request, "patient_management/partials/patient_info_form.html", {"patient": patient})
+
+def patient_medications_form(request, patient_id):
+    patient = get_object_or_404(Patient, patient_id=patient_id)
+    return render(request, "patient_management/partials/patient_medications_form.html", {"patient": patient})
+
+def patient_surgeries_form(request, patient_id):
+    patient = get_object_or_404(Patient, patient_id=patient_id)
+    return render(request, "patient_management/partials/patient_surgeries_form.html", {"patient": patient})
+
+def patient_social_history_form(request, patient_id):
+    patient = get_object_or_404(Patient, patient_id=patient_id)
+    return render(request, "patient_management/partials/patient_social_history_form.html", {"patient": patient})
