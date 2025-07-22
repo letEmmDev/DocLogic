@@ -56,11 +56,15 @@ def dashboard_staff(request):
         'departments': departments,
     })
 
+def admin_validation(request):
+    return render(request, 'core/dashboard/admin_validation.html')
 ## Dashboard views
 def dashboard(request):
     if not request.user.is_authenticated:
         return redirect('login')
+    if request.user.role == 'staff':
+        return redirect('dashboard_staff')
     if request.user.role == 'patient':
         return redirect('dashboard_patient')
     else:
-        return redirect('dashboard_staff')
+        return redirect('admin_validation')
