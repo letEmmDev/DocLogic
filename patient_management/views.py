@@ -7,6 +7,8 @@ from rest_framework import viewsets
 from .serializers import PatientReportSerializer
 from .forms import PatientsForm
 
+from core.decorators import staff_required, patient_required
+
 def patient_list(request):
     department_name = request.GET.get('department')
     if department_name and department_name != 'all':
@@ -32,9 +34,18 @@ class PatientReportViewSet(viewsets.ModelViewSet):
     queryset = Patient.objects.all()
     serializer_class = PatientReportSerializer
 
+@staff_required
 def edit_patient(request, patient_id):
     patient = get_object_or_404(Patient, patient_id=patient_id)
     return render(request, "patient_management/edit_patient.html", {"patient": patient})
+
+@patient_required
+def my_report(request):
+    try:
+        patient = Patient.objects.get(user=request.user)
+    except Patient.DoesNotExist:
+        return render(request, "patient_management/no_patient_profile.html")
+    return render(request, "patient_management/my_report.html", {"patient": patient})
 
 ## Partials for modal in the edit report page
 def patient_info_form(request, patient_id):

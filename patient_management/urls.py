@@ -9,6 +9,7 @@ router.register(r'api/patients-reports', PatientReportViewSet)
 urlpatterns = [
     path('patients/', views.patient_list, name='patient_list'),
     path('edit_patient/<int:patient_id>/', views.edit_patient, name='edit_patient'),
+    path('my_report/', views.my_report, name='my_report'),
     
     ## Partials paths
     path('report_patient/<int:patient_id>/info_form/', views.patient_info_form, name='patient_info_form'),

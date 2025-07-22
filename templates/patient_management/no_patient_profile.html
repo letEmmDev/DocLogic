@@ -1,0 +1,108 @@
+{% load static %}
+{% block title %}No Profile Found{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/hospital/dashboard_patient.css' %}">
+
+<style>
+    .patient-report-container {
+        background-color: #084fa3;
+        padding: 4rem 2.5rem;
+        max-width: 900px;
+        margin: 2rem auto;
+        border-radius: 20px;
+        color: white;
+        font-family: 'Montserrat';
+    }
+
+    .patient-detail {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .patient-profile-picture {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .patient-data h2 {
+        font-weight: 500;
+        font-size: 3rem;
+        margin: 0 0 1rem 0;
+    }
+
+    .patient-data p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+    }
+
+    .patient-fields {
+        background: var(--accent-blue);
+        border-radius: 18px;
+        padding: 2rem;
+    }
+
+    .field-value {
+        margin: 1.5rem 0;
+    }
+
+    .field-value ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .field-value li {
+        margin: 1rem 0;
+        font-size: 1.1rem;
+    }
+
+    .btn-primary {
+        background-color: var(--secondary-blue);
+        transition: background-color 0.3s ease;
+        font-family: "Mulish", sans-serif;
+        padding: 1rem 2rem;
+        border-radius: 30px;
+        margin-top: 2rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+        border: none;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-primary:hover {
+        background-color: var(--accent-blue);
+        box-shadow: 0 4px 24px rgba(203,232,246,0.9);
+    }
+</style>
+
+<div class="patient-report-container">
+    <div class="patient-detail">
+        <div class="patient-data">
+            <img src="{% static 'images/default_profile.png' %}" alt="Default profile picture" class="patient-profile-picture">
+            <h2>No Profile Found</h2>
+            <p>This patient profile does not exist or has been removed.</p>
+        </div>
+    </div>
+    
+    <div class="patient-fields">
+        <div class="field-value">
+            <p>Please ensure that:</p>
+            <ul>
+                <li>The patient ID is correct</li>
+                <li>The patient profile has been created</li>
+                <li>You have the necessary permissions to view this profile</li>
+            </ul>
+        </div>
+        
+        <div class="field-value">
+            <p>If you believe this is an error, please contact your system administrator.</p>
+            <a href="/dashboard-patient" class="btn btn-primary">Return to Dashboard</a>
+        </div>
+    </div>
+</div>
+{% endblock %}</div>

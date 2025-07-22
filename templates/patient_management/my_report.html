@@ -1,0 +1,40 @@
+{% extends "patient_management/base_patient.html" %}
+{% load static %}
+{% block title %}Personal Report{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/hospital/dashboard_patient.css' %}">
+<div class="patient-report-container">
+    <img src="{{ patient.profile_picture.url }}" alt="{{ patient.user.name }}'s profile picture" class="patient-profile-picture">
+    <div class="modal-selector">
+        <h2>{{ patient.user.name }} {{ patient.user.surname }}</h2>
+        <p>{{ patient.age }} years old</p>
+    </div>
+    {% if patient.department %}
+    <div class="patient-department">
+        <p>{{ patient.department.name }}</p>
+    </div>
+    {% endif %}
+    <div class="button-container" style="margin-bottom: 2rem;">
+        <button class="modal-button active">Patient Info</button>
+        <button class="modal-button">Medications</button>
+        <button class="modal-button">Past Surgeries</button>
+        <button class="modal-button">Social History</button>
+    </div>
+    <div id="selected-field">
+        <div class="patient-fields">
+            <h3>Patient Info</h3>
+            <div class="field-value"><p>{{ patient.patient_info|default:"No info provided." }}</div>
+            </p>
+            <h3>Medications</h3>
+            <div class="field-value"><p>{{ patient.patient_medications|default:"No medications listed." }}</div>
+            </p>
+            <h3>Past Surgeries</h3>
+            <div class="field-value"><p>{{ patient.patient_surgeries|default:"No surgeries listed." }}</div>
+            </p>
+            <h3>Social History</h3>
+            <div class="field-value"><p>{{ patient.patient_social_history|default:"No social history provided." }}</div>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

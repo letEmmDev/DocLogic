@@ -279,3 +279,6 @@ input, textarea {
 #selected-field div{
     margin: 5% 0;
 }
+.my-report .button-secondary{
+    margin: 0;
+}
