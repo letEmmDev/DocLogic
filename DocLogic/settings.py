@@ -87,28 +87,28 @@ WSGI_APPLICATION = 'DocLogic.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 # Development database configuration
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'doclogic',
-        'USER': 'emmanuelramos',
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
-
-# Production database configuration
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': os.getenv('DB_NAME', 'doclogic'),
-#         'USER': os.getenv('DB_USER', 'emmanuelramos'),
+#         'NAME': 'doclogic',
+#         'USER': 'emmanuelramos',
 #         'PASSWORD': os.getenv('DB_PASSWORD'),
-#         'HOST': os.getenv('DB_HOST', 'db'),
-#         'PORT': os.getenv('DB_PORT', '5432'),
+#         'HOST': 'localhost',
+#         'PORT': '5432',
 #     }
 # }
+
+# Production database configuration
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DB_NAME', 'doclogic'),
+        'USER': os.getenv('DB_USER', 'emmanuelramos'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST', 'db'),
+        'PORT': os.getenv('DB_PORT', '5432'),
+    }
+}
 
 
 # Password validation
