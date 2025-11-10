@@ -1,0 +1,195 @@
+0dddf79 HEAD@{2025-07-23 10:36:09 +0200}: checkout: moving from prod to dev-v1.0
+8bd2ceb HEAD@{2025-07-23 10:33:34 +0200}: checkout: moving from dev-v1.0 to prod
+0dddf79 HEAD@{2025-07-23 10:32:52 +0200}: checkout: moving from prod to dev-v1.0
+8bd2ceb HEAD@{2025-07-23 10:32:33 +0200}: checkout: moving from dev-v1.0 to prod
+0dddf79 HEAD@{2025-07-23 10:31:21 +0200}: checkout: moving from dev-v1.0 to dev-v1.0
+0dddf79 HEAD@{2025-07-23 09:48:54 +0200}: checkout: moving from prod to dev-v1.0
+8bd2ceb refs/remotes/origin/prod@{2025-07-23 09:48:46 +0200}: update by push
+8bd2ceb refs/heads/prod@{2025-07-23 09:48:40 +0200}: commit: Database modifification | production ready
+8bd2ceb HEAD@{2025-07-23 09:48:40 +0200}: commit: Database modifification | production ready
+0dddf79 refs/remotes/origin/prod@{2025-07-23 09:43:42 +0200}: update by push
+0dddf79 refs/heads/prod@{2025-07-23 09:43:34 +0200}: pull origin dev-v1.0: Fast-forward
+0dddf79 HEAD@{2025-07-23 09:43:34 +0200}: pull origin dev-v1.0: Fast-forward
+9ccfbbc HEAD@{2025-07-23 09:43:31 +0200}: checkout: moving from main to prod
+0dddf79 HEAD@{2025-07-23 09:42:54 +0200}: checkout: moving from dev-v1.0 to main
+0dddf79 HEAD@{2025-07-23 00:40:33 +0200}: checkout: moving from main to dev-v1.0
+0dddf79 refs/remotes/origin/main@{2025-07-23 00:38:23 +0200}: update by push
+0dddf79 refs/heads/main@{2025-07-23 00:38:06 +0200}: pull origin dev-v1.0: Fast-forward
+0dddf79 HEAD@{2025-07-23 00:38:06 +0200}: pull origin dev-v1.0: Fast-forward
+9ac7ff3 HEAD@{2025-07-23 00:37:36 +0200}: checkout: moving from dev-v1.0 to main
+0dddf79 refs/remotes/origin/dev-v1.0@{2025-07-23 00:36:18 +0200}: update by push
+0dddf79 refs/heads/dev-v1.0@{2025-07-23 00:36:08 +0200}: commit: Project update - Patient report consultation page + Patient navigation improvement
+0dddf79 HEAD@{2025-07-23 00:36:08 +0200}: commit: Project update - Patient report consultation page + Patient navigation improvement
+b56cd96 refs/heads/dev-v1.0@{2025-07-23 00:31:59 +0200}: commit: Feature update - Dashboard endpoints improvements + front end auth state handling
+b56cd96 HEAD@{2025-07-23 00:31:59 +0200}: commit: Feature update - Dashboard endpoints improvements + front end auth state handling
+1bb4b90 HEAD@{2025-07-23 00:28:15 +0200}: reset: moving to HEAD
+1bb4b90 refs/remotes/origin/dev-v1.0@{2025-07-22 00:46:15 +0200}: update by push
+1bb4b90 refs/heads/dev-v1.0@{2025-07-22 00:46:09 +0200}: commit: Feature update - Fix submit of data From UI
+1bb4b90 HEAD@{2025-07-22 00:46:09 +0200}: commit: Feature update - Fix submit of data From UI
+95930af refs/heads/dev-v1.0@{2025-07-21 23:28:08 +0200}: commit: Project update - Patient report implementation | Fully functional REST API setting/routing + CRUD Operations on the model w/ Serializers
+95930af HEAD@{2025-07-21 23:28:08 +0200}: commit: Project update - Patient report implementation | Fully functional REST API setting/routing + CRUD Operations on the model w/ Serializers
+21e594f refs/remotes/origin/dev-v1.0@{2025-07-20 01:34:09 +0200}: update by push
+21e594f refs/heads/dev-v1.0@{2025-07-20 01:33:53 +0200}: commit: Project update - Staff Dashboard | Page frontend integration + Patient management feature and implentation on the page + database hydration file
+21e594f HEAD@{2025-07-20 01:33:53 +0200}: commit: Project update - Staff Dashboard | Page frontend integration + Patient management feature and implentation on the page + database hydration file
+f4f590f refs/remotes/origin/dev-v1.0@{2025-07-18 18:48:56 +0200}: update by push
+f4f590f refs/heads/dev-v1.0@{2025-07-18 18:48:51 +0200}: commit: Feature update - Patient Dashboard | Contact Form integration + Nosql (AWS DynamoDB) conection settings + Request test
+f4f590f HEAD@{2025-07-18 18:48:51 +0200}: commit: Feature update - Patient Dashboard | Contact Form integration + Nosql (AWS DynamoDB) conection settings + Request test
+aaedef6 refs/remotes/origin/dev-v1.0@{2025-07-18 03:48:53 +0200}: update by push
+aaedef6 refs/heads/dev-v1.0@{2025-07-18 03:48:46 +0200}: commit: Project update - Patient Dashboard | Full page front end + Hospital models setting, functionnal back end & HTMX addition to project environnement
+aaedef6 HEAD@{2025-07-18 03:48:46 +0200}: commit: Project update - Patient Dashboard | Full page front end + Hospital models setting, functionnal back end & HTMX addition to project environnement
+7498b67 HEAD@{2025-07-17 18:26:40 +0200}: reset: moving to HEAD
+7498b67 refs/remotes/origin/dev-v1.0@{2025-07-17 11:15:27 +0200}: update by push
+7498b67 refs/heads/dev-v1.0@{2025-07-17 11:15:21 +0200}: commit: Project update - Dashboard page setting | Minimal styling & Routing -> Access based view (on role)
+7498b67 HEAD@{2025-07-17 11:15:21 +0200}: commit: Project update - Dashboard page setting | Minimal styling & Routing -> Access based view (on role)
+33e65e0 refs/remotes/origin/dev-v1.0@{2025-07-15 21:40:11 +0200}: update by push
+33e65e0 refs/heads/dev-v1.0@{2025-07-15 21:40:05 +0200}: commit: Project update - Functional dockerization of the project | web and db container + MCP logic implementation
+33e65e0 HEAD@{2025-07-15 21:40:05 +0200}: commit: Project update - Functional dockerization of the project | web and db container + MCP logic implementation
+b3cbdcb refs/remotes/origin/dev-v1.0@{2025-07-15 14:13:43 +0200}: update by push
+b3cbdcb refs/heads/dev-v1.0@{2025-07-15 14:13:38 +0200}: commit: Feature update - Functionnal logout button implementation + Auth state logic integration
+b3cbdcb HEAD@{2025-07-15 14:13:38 +0200}: commit: Feature update - Functionnal logout button implementation + Auth state logic integration
+0ebbd98 refs/remotes/origin/dev-v1.0@{2025-07-15 12:17:39 +0200}: update by push
+0ebbd98 refs/heads/dev-v1.0@{2025-07-15 12:17:31 +0200}: commit: Project update - Role addition | patient + admin
+0ebbd98 HEAD@{2025-07-15 12:17:31 +0200}: commit: Project update - Role addition | patient + admin
+7830e89 refs/remotes/origin/dev-v1.0@{2025-07-14 23:51:29 +0200}: update by push
+7830e89 refs/heads/dev-v1.0@{2025-07-14 23:45:06 +0200}: commit: Feature update - reCaptcha integration/operation fix | form submission fix
+7830e89 HEAD@{2025-07-14 23:45:06 +0200}: commit: Feature update - reCaptcha integration/operation fix | form submission fix
+2a9d7a2 HEAD@{2025-07-14 23:30:24 +0200}: reset: moving to HEAD
+2a9d7a2 refs/remotes/origin/dev-v1.0@{2025-07-14 19:25:04 +0200}: update by push
+2a9d7a2 refs/heads/dev-v1.0@{2025-07-14 19:21:01 +0200}: commit: Project update - reCaptcha setting & integration + styling for signup page
+2a9d7a2 HEAD@{2025-07-14 19:21:01 +0200}: commit: Project update - reCaptcha setting & integration + styling for signup page
+9ac7ff3 HEAD@{2025-07-14 19:06:08 +0200}: reset: moving to HEAD
+9ac7ff3 HEAD@{2025-07-14 19:05:33 +0200}: reset: moving to HEAD
+9ac7ff3 HEAD@{2025-07-14 13:50:35 +0200}: checkout: moving from main to dev-v1.0
+9ac7ff3 refs/remotes/origin/main@{2025-07-14 13:33:39 +0200}: update by push
+9ac7ff3 refs/heads/main@{2025-07-14 13:33:28 +0200}: reset: moving to dev-v1.0
+9ac7ff3 HEAD@{2025-07-14 13:33:28 +0200}: reset: moving to dev-v1.0
+166ff77 refs/heads/main@{2025-07-14 13:33:09 +0200}: pull: Fast-forward
+166ff77 HEAD@{2025-07-14 13:33:09 +0200}: pull: Fast-forward
+57a743e HEAD@{2025-07-14 13:32:59 +0200}: checkout: moving from dev-v1.0 to main
+9ac7ff3 refs/remotes/origin/dev-v1.0@{2025-07-14 13:30:57 +0200}: update by push
+9ac7ff3 refs/heads/dev-v1.0@{2025-07-14 13:30:44 +0200}: reset: moving to safe-working-version
+9ac7ff3 HEAD@{2025-07-14 13:30:44 +0200}: reset: moving to safe-working-version
+212eb41 HEAD@{2025-07-14 13:29:01 +0200}: merge safe-working-version: updating HEAD
+212eb41 HEAD@{2025-07-14 13:28:31 +0200}: pull origin safe-working-version: updating HEAD
+212eb41 refs/heads/dev-v1.0@{2025-07-14 13:19:58 +0200}: branch: Created from HEAD
+212eb41 HEAD@{2025-07-14 13:19:58 +0200}: checkout: moving from dev to dev-v1.0
+212eb41 refs/heads/dev@{2025-07-14 13:17:59 +0200}: commit: Branch update for turning branch into working version of the project
+212eb41 HEAD@{2025-07-14 13:17:59 +0200}: commit: Branch update for turning branch into working version of the project
+fd37fb3 refs/remotes/origin/dev@{2025-07-14 13:14:35 +0200}: update by push
+fd37fb3 refs/heads/dev@{2025-07-14 11:25:48 +0200}: reset: moving to HEAD~1
+fd37fb3 HEAD@{2025-07-14 11:25:48 +0200}: reset: moving to HEAD~1
+fae19ed refs/heads/dev@{2025-07-14 11:25:37 +0200}: reset: moving to HEAD~1
+fae19ed HEAD@{2025-07-14 11:25:37 +0200}: reset: moving to HEAD~1
+26e94da refs/heads/dev@{2025-07-14 11:25:28 +0200}: reset: moving to HEAD~1
+26e94da HEAD@{2025-07-14 11:25:28 +0200}: reset: moving to HEAD~1
+053f137 refs/heads/dev@{2025-07-14 11:25:12 +0200}: reset: moving to HEAD@{1}
+053f137 HEAD@{2025-07-14 11:25:12 +0200}: reset: moving to HEAD@{1}
+9ccfbbc refs/heads/dev@{2025-07-14 11:23:58 +0200}: reset: moving to HEAD~4
+9ccfbbc HEAD@{2025-07-14 11:23:58 +0200}: reset: moving to HEAD~4
+053f137 HEAD@{2025-07-14 11:22:47 +0200}: checkout: moving from safe-working-version to dev
+9ac7ff3 refs/remotes/origin/safe-working-version@{2025-07-14 11:22:37 +0200}: update by push
+9ac7ff3 refs/heads/safe-working-version@{2025-07-14 11:21:23 +0200}: commit: Branching out to fixed 'safe-working-version' -f flag
+9ac7ff3 HEAD@{2025-07-14 11:21:23 +0200}: commit: Branching out to fixed 'safe-working-version' -f flag
+808b08e refs/remotes/origin/safe-working-version@{2025-07-14 11:19:34 +0200}: update by push
+166ff77 refs/remotes/origin/main@{2025-07-12 16:10:37 +0200}: fetch: fast-forward
+ee83bb2 refs/remotes/origin/safe-working-version@{2025-07-12 16:10:37 +0200}: fetch: fast-forward
+808b08e refs/remotes/origin/safe-working-version@{2025-07-12 16:06:48 +0200}: update by push
+808b08e refs/heads/safe-working-version@{2025-07-12 16:05:59 +0200}: reset: moving to HEAD~1
+808b08e HEAD@{2025-07-12 16:05:59 +0200}: reset: moving to HEAD~1
+912ba9a refs/heads/safe-working-version@{2025-07-12 16:05:49 +0200}: pull --tags origin safe-working-version: Fast-forward
+912ba9a HEAD@{2025-07-12 16:05:49 +0200}: pull --tags origin safe-working-version: Fast-forward
+808b08e refs/heads/safe-working-version@{2025-07-12 16:05:27 +0200}: reset: moving to HEAD~1
+808b08e HEAD@{2025-07-12 16:05:27 +0200}: reset: moving to HEAD~1
+912ba9a refs/heads/safe-working-version@{2025-07-12 16:04:24 +0200}: pull --tags origin safe-working-version: Fast-forward
+912ba9a HEAD@{2025-07-12 16:04:24 +0200}: pull --tags origin safe-working-version: Fast-forward
+912ba9a refs/remotes/origin/safe-working-version@{2025-07-12 16:04:09 +0200}: fetch: fast-forward
+808b08e HEAD@{2025-07-12 15:57:52 +0200}: checkout: moving from dev to safe-working-version
+1da5c49 refs/stash@{2025-07-12 15:57:51 +0200}: WIP on dev: 053f137 Merge branch 'dev' of https://github.com/letEmmDev/DocLogic into local_dev
+053f137 HEAD@{2025-07-12 15:57:51 +0200}: reset: moving to HEAD
+053f137 refs/heads/dev@{2025-07-12 15:56:25 +0200}: pull: Merge made by the 'ort' strategy.
+053f137 HEAD@{2025-07-12 15:56:25 +0200}: pull: Merge made by the 'ort' strategy.
+26e94da HEAD@{2025-07-12 15:56:19 +0200}: checkout: moving from safe-working-version to dev
+808b08e refs/remotes/origin/safe-working-version@{2025-07-12 15:55:43 +0200}: update by push
+808b08e refs/heads/safe-working-version@{2025-07-12 15:55:13 +0200}: commit: Slight .gitignore file update
+808b08e HEAD@{2025-07-12 15:55:13 +0200}: commit: Slight .gitignore file update
+fbb31ae refs/remotes/origin/dev@{2025-07-12 15:52:29 +0200}: fetch: fast-forward
+fae19ed HEAD@{2025-07-12 15:49:23 +0200}: checkout: moving from dev to safe-working-version
+26e94da HEAD@{2025-07-12 15:48:23 +0200}: checkout: moving from safe-working-version to dev
+fae19ed refs/remotes/origin/safe-working-version@{2025-07-12 15:47:27 +0200}: update by push
+fae19ed refs/heads/safe-working-version@{2025-07-12 15:47:11 +0200}: branch: Created from HEAD
+fae19ed HEAD@{2025-07-12 15:47:11 +0200}: checkout: moving from fae19eddc5bfc2906ba82b649786cf61d054123d to safe-working-version
+fae19ed HEAD@{2025-07-12 15:37:45 +0200}: checkout: moving from feature to fae19eddc5bfc2906ba82b649786cf61d054123d
+26e94da refs/remotes/origin/feature@{2025-07-12 15:34:34 +0200}: update by push
+26e94da HEAD@{2025-07-12 15:34:33 +0200}: checkout: moving from fae19eddc5bfc2906ba82b649786cf61d054123d to feature
+fae19ed HEAD@{2025-07-12 15:30:08 +0200}: checkout: moving from dev to fae19eddc5bfc2906ba82b649786cf61d054123d
+26e94da refs/heads/feature@{2025-07-12 15:28:26 +0200}: branch: Created from dev
+64490e5 refs/remotes/origin/dev@{2025-07-12 15:27:41 +0200}: fetch: fast-forward
+26e94da refs/heads/dev@{2025-07-12 15:23:08 +0200}: pull origin dev: Merge made by the 'ort' strategy.
+26e94da HEAD@{2025-07-12 15:23:08 +0200}: pull origin dev: Merge made by the 'ort' strategy.
+fae19ed refs/heads/dev@{2025-07-12 15:21:23 +0200}: commit: Project update - Admin panel implementation for users management + User bulk creation w/ manag.py shell
+fae19ed HEAD@{2025-07-12 15:21:23 +0200}: commit: Project update - Admin panel implementation for users management + User bulk creation w/ manag.py shell
+0b88578 refs/remotes/origin/dev@{2025-07-11 22:50:36 +0200}: fetch: fast-forward
+435bd09 refs/remotes/origin/main@{2025-07-11 22:50:36 +0200}: fetch: fast-forward
+fd37fb3 HEAD@{2025-07-11 22:36:15 +0200}: checkout: moving from main to dev
+57a743e HEAD@{2025-07-11 22:35:00 +0200}: checkout: moving from dev to main
+fd37fb3 refs/remotes/origin/dev@{2025-07-11 19:53:49 +0200}: update by push
+fd37fb3 refs/heads/dev@{2025-07-11 19:53:31 +0200}: commit: Project update - User model implementation + Authentication feature | SignIn + Functional MVC Logic integration
+fd37fb3 HEAD@{2025-07-11 19:53:31 +0200}: commit: Project update - User model implementation + Authentication feature | SignIn + Functional MVC Logic integration
+9ccfbbc HEAD@{2025-07-11 19:39:42 +0200}: reset: moving to HEAD
+9ccfbbc HEAD@{2025-07-09 15:12:43 +0200}: checkout: moving from prod to dev
+9ccfbbc refs/remotes/origin/prod@{2025-07-09 15:11:21 +0200}: update by push
+9ccfbbc HEAD@{2025-07-09 15:10:58 +0200}: checkout: moving from dev to prod
+9ccfbbc HEAD@{2025-07-09 15:00:07 +0200}: checkout: moving from main to dev
+57a743e HEAD@{2025-07-09 14:59:15 +0200}: checkout: moving from dev to main
+9ccfbbc HEAD@{2025-07-09 14:58:38 +0200}: checkout: moving from main to dev
+57a743e refs/remotes/origin/main@{2025-07-09 14:52:07 +0200}: update by push
+9ccfbbc refs/remotes/origin/dev@{2025-07-09 14:51:12 +0200}: update by push
+9ccfbbc refs/heads/dev@{2025-07-09 14:46:12 +0200}: filter-branch: rewrite
+57a743e refs/heads/main@{2025-07-09 14:46:12 +0200}: commit: Project update - Core app set up + Front-end integration | Landing page, registration page, Hero page
+9ccfbbc refs/heads/prod@{2025-07-09 14:46:12 +0200}: filter-branch: rewrite
+9ccfbbc refs/heads/test@{2025-07-09 14:46:12 +0200}: filter-branch: rewrite
+57a743e HEAD@{2025-07-09 14:46:12 +0200}: commit: Project update - Core app set up + Front-end integration | Landing page, registration page, Hero page
+83a2222 refs/heads/main@{2025-07-09 14:42:05 +0200}: reset: moving to HEAD~1
+83a2222 HEAD@{2025-07-09 14:42:05 +0200}: reset: moving to HEAD~1
+0576953 refs/heads/main@{2025-07-09 14:42:03 +0200}: reset: moving to HEAD~1
+0576953 HEAD@{2025-07-09 14:42:03 +0200}: reset: moving to HEAD~1
+8263aa5 refs/heads/main@{2025-07-09 14:35:02 +0200}: commit: Project update - Core app setup & Landing page front-end integration
+8263aa5 HEAD@{2025-07-09 14:35:02 +0200}: commit: Project update - Core app setup & Landing page front-end integration
+0576953 refs/heads/main@{2025-07-09 14:34:30 +0200}: reset: moving to HEAD~1
+0576953 HEAD@{2025-07-09 14:34:30 +0200}: reset: moving to HEAD~1
+13556fe refs/heads/main@{2025-07-09 14:34:27 +0200}: reset: moving to HEAD~1
+13556fe HEAD@{2025-07-09 14:34:27 +0200}: reset: moving to HEAD~1
+e0fea11 refs/heads/main@{2025-07-09 14:34:05 +0200}: commit: Remove AWS credentials and add to .gitignore
+e0fea11 HEAD@{2025-07-09 14:34:05 +0200}: commit: Remove AWS credentials and add to .gitignore
+13556fe refs/heads/main@{2025-07-09 14:32:09 +0200}: commit: Remove AWS credentials and add to .gitignore
+13556fe HEAD@{2025-07-09 14:32:09 +0200}: commit: Remove AWS credentials and add to .gitignore
+0576953 refs/heads/main@{2025-07-09 14:30:41 +0200}: reset: moving to HEAD~1
+0576953 HEAD@{2025-07-09 14:30:41 +0200}: reset: moving to HEAD~1
+e8f9c87 refs/heads/main@{2025-07-09 14:30:33 +0200}: reset: moving to HEAD~1
+e8f9c87 HEAD@{2025-07-09 14:30:33 +0200}: reset: moving to HEAD~1
+02cb0c0 refs/heads/main@{2025-07-09 14:14:54 +0200}: commit: Remove AWS credentials and add to .gitignore
+02cb0c0 HEAD@{2025-07-09 14:14:54 +0200}: commit: Remove AWS credentials and add to .gitignore
+e8f9c87 refs/heads/main@{2025-07-09 14:12:36 +0200}: commit: Project update - Core app setup & Landing page front-end integration
+e8f9c87 HEAD@{2025-07-09 14:12:36 +0200}: commit: Project update - Core app setup & Landing page front-end integration
+0576953 refs/heads/main@{2025-07-09 13:00:28 +0200}: reset: moving to HEAD~1
+0576953 HEAD@{2025-07-09 13:00:28 +0200}: reset: moving to HEAD~1
+aa4298a refs/heads/main@{2025-07-09 12:58:51 +0200}: commit: Project update - Core app setup & Landing page front-end integration
+aa4298a HEAD@{2025-07-09 12:58:51 +0200}: commit: Project update - Core app setup & Landing page front-end integration
+0576953 refs/heads/main@{2025-07-09 12:58:22 +0200}: reset: moving to HEAD~1
+0576953 HEAD@{2025-07-09 12:58:22 +0200}: reset: moving to HEAD~1
+2c20461 HEAD@{2025-07-09 12:58:00 +0200}: reset: moving to HEAD
+2c20461 refs/heads/prod@{2025-07-09 12:51:14 +0200}: branch: Created from main
+2c20461 refs/heads/test@{2025-07-09 12:51:03 +0200}: branch: Created from main
+2c20461 refs/heads/dev@{2025-07-09 12:50:53 +0200}: branch: Created from main
+2c20461 refs/heads/main@{2025-07-09 12:50:18 +0200}: commit: Project update - Core app setup & Landing page front-end integration
+2c20461 HEAD@{2025-07-09 12:50:18 +0200}: commit: Project update - Core app setup & Landing page front-end integration
+0576953 refs/heads/main@{2025-07-02 11:48:46 +0200}: commit: Project Update - PG Setup with Django| Database initialisation | Superuser | Admin Panel
+0576953 HEAD@{2025-07-02 11:48:46 +0200}: commit: Project Update - PG Setup with Django| Database initialisation | Superuser | Admin Panel
+83a2222 refs/remotes/origin/main@{2025-06-18 15:52:16 +0200}: update by push
+83a2222 refs/heads/main@{2025-06-18 15:52:15 +0200}: commit: Django project initialisation
+83a2222 HEAD@{2025-06-18 15:52:15 +0200}: commit: Django project initialisation
+22e4ae0 refs/remotes/origin/main@{2025-06-18 15:48:28 +0200}: update by push
+22e4ae0 refs/heads/main@{2025-06-18 15:48:26 +0200}: Branch: renamed refs/heads/main to refs/heads/main
+22e4ae0 refs/heads/main@{2025-06-18 15:48:26 +0200}: commit (initial): first commit
+22e4ae0 HEAD@{2025-06-18 15:48:26 +0200}: Branch: renamed refs/heads/main to refs/heads/main
+22e4ae0 HEAD@{2025-06-18 15:48:26 +0200}: commit (initial): first commit

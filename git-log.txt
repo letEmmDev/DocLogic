@@ -1,0 +1,125 @@
+commit 0dddf796bdb787230c7aa156eb6a4cc1ece40043
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Wed Jul 23 00:36:08 2025 +0200
+
+    Project update - Patient report consultation page + Patient navigation improvement
+
+commit b56cd965326d96dbf6ed6ba70719b381e17f3834
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Wed Jul 23 00:31:59 2025 +0200
+
+    Feature update - Dashboard endpoints improvements + front end auth state handling
+
+commit 1bb4b90d4098874b374eb6acea32a96ab1e3fee0
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Tue Jul 22 00:46:09 2025 +0200
+
+    Feature update - Fix submit of data From UI
+
+commit 95930afcdf04d594be56a71b29dd7c818ec8326f
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Mon Jul 21 23:28:08 2025 +0200
+
+    Project update - Patient report implementation | Fully functional REST API setting/routing + CRUD Operations on the model w/ Serializers
+
+commit 21e594fef9619786a0aa1da9a2c5d96b46905c0d
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Sun Jul 20 01:33:53 2025 +0200
+
+    Project update - Staff Dashboard | Page frontend integration + Patient management feature and implentation on the page + database hydration file
+
+commit f4f590f6e6be141422d5b5f43ef536921f600539
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Fri Jul 18 18:48:51 2025 +0200
+
+    Feature update - Patient Dashboard | Contact Form integration + Nosql (AWS DynamoDB) conection settings + Request test
+
+commit aaedef6905fa2d67b3cf32c52b82bdb0ddb761a6
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Fri Jul 18 03:48:46 2025 +0200
+
+    Project update - Patient Dashboard | Full page front end + Hospital models setting, functionnal back end & HTMX addition to project environnement
+
+commit 7498b67b50e9104a230ec1763955b69228dd1e08
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Thu Jul 17 11:15:21 2025 +0200
+
+    Project update - Dashboard page setting | Minimal styling & Routing -> Access based view (on role)
+
+commit 33e65e0aaa9f29f9cbaea316d851e57cd9474a44
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Tue Jul 15 21:40:05 2025 +0200
+
+    Project update - Functional dockerization of the project | web and db container + MCP logic implementation
+
+commit b3cbdcb3b28ae9d03e8cae80d16813e2ecda46c5
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Tue Jul 15 14:13:38 2025 +0200
+
+    Feature update - Functionnal logout button implementation + Auth state logic integration
+
+commit 0ebbd984f6684a69acdb9c8d5bd33307e6137173
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Tue Jul 15 12:17:31 2025 +0200
+
+    Project update - Role addition | patient + admin
+
+commit 7830e8976007729807d3cad79275246286f95fbb
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Mon Jul 14 23:45:06 2025 +0200 
+
+    Feature update - reCaptcha integration/operation fix | form submission fix
+
+commit 2a9d7a27c7a18fee661ea564e62c05430af3f3a2
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Mon Jul 14 19:21:01 2025 +0200
+
+    Project update - reCaptcha setting & integration + styling for signup page
+
+commit 9ac7ff3df41bf26bc4f20906fd5c29f7512a33ca
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Mon Jul 14 11:21:23 2025 +0200
+
+    Branching out to fixed 'safe-working-version' -f flag
+
+commit 808b08edd2a1668fdafa98415ef27526959e5e3c
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Sat Jul 12 15:55:13 2025 +0200
+
+    Slight .gitignore file update
+
+commit fae19eddc5bfc2906ba82b649786cf61d054123d
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Sat Jul 12 15:21:23 2025 +0200
+
+    Project update - Admin panel implementation for users management + User bulk creation w/ manag.py shell
+
+commit fd37fb387c26ca52aa4c580ea1890809cedf4b24
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Fri Jul 11 19:53:31 2025 +0200
+
+    Project update - User model implementation + Authentication feature | SignIn + Functional MVC Logic integration
+
+commit 9ccfbbc53f160c64933cfec726cfa13e26c156bc
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Wed Jul 9 12:50:18 2025 +0200
+
+    Project update - Core app setup & Landing page front-end integration
+
+commit 5a0f20648f2012410514155d49e81af4d8839d3c
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Wed Jul 2 11:48:46 2025 +0200
+
+    Project Update - PG Setup with Django| Database initialisation | Superuser | Admin Panel
+
+commit 83a2222c8aca9f11e2f1439ac880caa394cd670c
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Wed Jun 18 15:52:15 2025 +0200
+
+    Django project initialisation
+
+commit 22e4ae05113c4a64187afcd99d186829a2a8194a
+Author: Saikyyo <ramos.emmanuel@outlook.fr>
+Date:   Wed Jun 18 15:48:26 2025 +0200
+
+    first commit
