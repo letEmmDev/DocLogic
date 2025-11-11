@@ -24,3 +24,22 @@ Préciser Font size, Font family.
 
 <!-- RGPD & CNIL -->
 Inclure dans la présentation du la définition du rgpd et de la cnil.
+
+<!-- MERISE  -->
+Diagramme de séquences
+
+<!-- COOKIES  -->
+À implementer un bandeau d'information sur l'utilisation des cookies.
+
+<!-- Sécurité  -->
+CSRF Token pour les formulaires sensibles.
+CORS
+
+<!-- Pytest  -->
+Processus de test unitaire | intégration avec pytest.
+
+<!-- DESIGN  -->
+Wireframe à implémenter
+
+<!-- NoSQL  -->
+Régler le pb aws

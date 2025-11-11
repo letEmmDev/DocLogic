@@ -10,6 +10,12 @@ from patient_management.models import Patient
 def home(request):
     return render(request, 'home.html')
 
+def custom_404(request, exception):
+    return redirect(request, 'home.html')
+
+def custom_500(request):
+    return redirect(request, 'home.html')
+
 ## Registration views
 def signup(request):
     if request.method == 'POST':
