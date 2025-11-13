@@ -4,6 +4,12 @@
         <span class="menu-body"></span>
         <span class="menu-body-bot"></span>
     </a>
+    <div class="nav-links">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'dashboard_patient'%}">My Dashboard</a>
+        <a href="{% url 'dashboard_staff'%}">Staff</a>
+        <a href="/admin">Admin</a>
+    </div>
     <a href="#" class="search-icon">
         <img src="{% static 'images/core/search-icon.svg' %}" alt="Search">
     </a>

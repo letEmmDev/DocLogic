@@ -63,7 +63,7 @@ main img{
     padding: 0;
 }
 .bg-image{
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
     z-index: -1;
 }
