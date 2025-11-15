@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{% static 'css/core/dashboard/navbar.css' %}">
         <link rel="stylesheet" href="{% static 'css/core/dashboard/base.css' %}">
+        <link rel="stylesheet" href="{% static 'css/dash_navbar.css' %}">
     {% endblock %}
     {% htmx_script %}
 </head>
@@ -30,6 +31,7 @@
             event.detail.headers['X-CSRFToken'] = csrfToken;
         });
     </script>
+    <script src="{% static 'js/navbar.js' %}"></script>
     {% include "core/dashboard/includes/footer.html" %}
 </body>
 </html>

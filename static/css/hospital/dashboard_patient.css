@@ -25,6 +25,10 @@
     object-fit: cover;
     border-radius: 15px;
 }
+.doctor-card a, .patient-card a {
+    margin: 0;
+    justify-self: end;
+}
 .doctor-info, .patient-info {
     color: var(--black);
 }
