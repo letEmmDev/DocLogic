@@ -43,3 +43,6 @@ Wireframe à implémenter
 
 <!-- NoSQL  -->
 Régler le pb aws
+
+<!-- RESPONSIVE  -->
+Faire le responsive d'au moins 2 pages.

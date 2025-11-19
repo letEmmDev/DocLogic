@@ -156,6 +156,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
 LOGIN_URL = "/login"
+REDIRECT_FIELD_NAME = "next"
 
 
 # Default primary key field type

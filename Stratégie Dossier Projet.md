@@ -185,29 +185,17 @@
 
 * * * * *
 
-### 28\. **Tester et déboguer le code**
-
--   **Stratégie** :
-    -   Explique l'utilisation de tests Django, debug dans VS Code.
--   **Preuve** : Fichiers [tests.py](vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/code/electron-browser/workbench/workbench.html), captures d'écran.
-
-* * * * *
-
 ### 29\. **Mettre en place une base de données relationnelle**
 
 -   **Stratégie** :
     -   Décris la structure PostgreSQL, migrations Django.
 -   **Preuve** : Modèles, [hospital.sql](vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/code/electron-browser/workbench/workbench.html).
 
-* * * * *
-
-### 30\. **Dictionnaire de données, schémas conceptuel/logique/physique**
-
--   **Stratégie** :
-    -   Détaille les champs des modèles, relations, contraintes.
--   **Preuve** : Fichiers [models.py](vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/code/electron-browser/workbench/workbench.html), [hospital.sql](vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/code/electron-browser/workbench/workbench.html).
-
-* * * * *
+* * * * *  
+```bash
+patient_management/migrations/0001_initial.py
+hospital/migrations/0002_add_specialization.py
+```
 
 ### 31\. **Instructions de création/modification/suppression de la BDD**
 
@@ -247,14 +235,6 @@
 -   **Stratégie** :
     -   Explique la logique métier dans les vues, serializers, modèles.
 -   **Preuve** : Fichiers [views.py](vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/code/electron-browser/workbench/workbench.html), [serializers.py](vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/code/electron-browser/workbench/workbench.html).
-
-* * * * *
-
-### 36\. **Automatisation et qualité du code**
-
--   **Stratégie** :
-    -   Propose l'utilisation de scripts, outils de linting, CI/CD (à ajouter si besoin).
--   **Preuve** : Scripts, doc.
 
 * * * * *
 
