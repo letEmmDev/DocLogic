@@ -170,3 +170,116 @@ section{
     width: 80%;
     margin: 8% 0;
 }
+@media (max-width: 430px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    h1{
+        letter-spacing: -1px;
+    }
+    h2{
+        letter-spacing: 0px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    section {
+        margin: 0 0 10% 0;
+        padding: 0;
+        height: 43vh;
+    }
+    .logo {
+        top: 15%;
+        z-index: 10;
+        position: absolute;
+    }
+    .hero-treshold {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        height: auto;
+        margin: 1% 0;
+        padding-top: 10%;
+    }
+    .hero-block1{
+        height: 55vh;
+        border-radius: 0 0 0 30px;
+    }
+    .hero-block2{
+        height: 70vh;
+        border-radius: 0 0 50px 50px;
+    }
+    .hero-block3{
+        height: 77vh;
+        border-radius: 0 0 5px 60px;
+    }
+    .hero-block4{
+        height: 60vh;
+        border-radius: 0 0 20px 0;
+    }
+    .discover-section, .team-section {
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .discover-section h1, .discover-section h2,
+    .team-section h1, .team-section h2 {
+        text-align: center;
+        padding: 0;
+    }
+    .discover-section h1{
+        padding: 0 3%;
+    }
+    .discover-section h2{
+        padding: 0 2%;
+    }
+    .discover-section{
+        border-radius: 0 70px 0 0;
+    }
+    img.discover-image {
+        width: 80%;
+    }
+    .discover-block p {
+        padding: 0 18% 10% 0;
+        text-align: center;
+        margin: 0;
+    }
+    .discover-block {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .discover-treshold{
+        border-radius: 0 0 40px 0;
+    }
+    .hero-section h1, .hero-section h2, .hero-section h3 {
+        text-align: center;
+        padding: 0 0.5rem;
+    }
+    .team-treshold{
+        height: auto;
+    }
+    #team{
+        margin: 0;
+    }
+    .team-block1, .team-block2, .team-block3{
+        align-items: center;
+    }
+    .team-block1{
+        border-radius: 20px 0 0 0;
+    }
+    .team-block2{
+        border-radius: 20px 65px 0px 0;
+    }
+    .team-block3{
+        border-radius: 60px 60px 0px 0px;
+    }
+}

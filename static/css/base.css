@@ -74,3 +74,33 @@ main img{
     left: 20%;
     right: 20%;
 }
+@media (max-width: 768px) {
+    .hero-treshold, .team-treshold, .discover-treshold {
+        flex-direction: column;
+        position: static;
+        height: auto;
+    }
+    .hero-block1, .hero-block2, .hero-block3, .hero-block4,
+    .team-block1, .team-block2, .team-block3 {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    .discover-section, .team-section {
+        padding: 2% 2%;
+        align-items: center;
+    }
+    h1 { font-size: 2rem; padding: 0; }
+    h2 { font-size: 1.2rem; padding: 0; }
+    h3, p { font-size: 1rem; }
+    .discover-block, .team-block1, .team-block2, .team-block3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    .discover-block img, .team-block1 img, .team-block2 img, .team-block3 img {
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+    }
+}
