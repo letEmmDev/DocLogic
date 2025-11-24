@@ -126,10 +126,16 @@ body.sidebar-open {
         height: 40px;
     }
     
-    .btn-primary {
-        display: none; 
+    .btn-primary a{
+        font-size: 16px;
     }
-    
+    .btn-primary {
+        display: flex;
+        padding: 0.5rem 2rem;
+        margin: 0 1rem 0 0px;
+        font-size: 16px;
+        align-items: center;
+    }
     .menu-toggle.active .menu-body {
         transform: rotate(45deg) translate(5px, 5px);
     }

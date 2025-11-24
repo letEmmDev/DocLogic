@@ -27,3 +27,19 @@
     display: block;
     width: 100%;
 }
+@media(max-width: 430px){
+    .logo{
+        top: 15%;
+    }
+    .btn-container{
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        right: 0%;
+    }
+    .btn-secondary{
+        padding: 0.5rem 2rem;
+        margin: 0 3rem 0 0;
+        font-size: 16px;
+    }
+}
