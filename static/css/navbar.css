@@ -123,6 +123,7 @@ body.sidebar-open {
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: flex;
+        height: 40px;
     }
     
     .btn-primary {
@@ -135,5 +136,13 @@ body.sidebar-open {
     
     .menu-toggle.active .menu-body-bot {
         transform: rotate(-45deg) translate(7px, -7px);
+    }
+    .menu-body {
+        width: 60%;
+        height: 15px;
+    }
+    .menu-body-bot {
+        width: 50%;
+        height: 15px;
     }
 }
