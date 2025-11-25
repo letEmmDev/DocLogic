@@ -12,19 +12,27 @@ def contact_form(request):
         email = request.POST.get('username')
         message = request.POST.get('message')
         # Connect to DynamoDB
-        dynamodb = boto3.resource(
-            'dynamodb',
-            aws_access_key_id=settings.AWS_ACCESS_KEY_ID,
-            aws_secret_access_key=settings.AWS_SECRET_ACCESS_KEY,
-            region_name=settings.AWS_REGION
-        )
-        table = dynamodb.Table('ContactMessages')
-        # Put item
-        table.put_item(Item={
-            'message_id': str(uuid.uuid4()),
-            'email': email,
-            'message': message,
-        })
+        try:
+            dynamodb = boto3.resource(
+                'dynamodb',
+                aws_access_key_id=settings.AWS_ACCESS_KEY_ID,
+                aws_secret_access_key=settings.AWS_SECRET_ACCESS_KEY,
+                region_name=settings.AWS_REGION
+            )
+            table = dynamodb.Table('ContactMessages')
+            print(f"Table status debug:{table.table_status}")
+            
+            # Put item
+            response = table.put_item(Item={
+                'message_id': str(uuid.uuid4()),
+                'email': email,
+                'message': message,
+            })
+            print("PutItem response:", response)
+        except Exception as e:
+            print("DynamoDB error:", e)
+            return render(request, 'hospital/contact_form.html', {'error': str(e)})
+        
         return render(request, 'hospital/contact_form.html', {'success': True})
     return render(request, 'hospital/contact_form.html')
 

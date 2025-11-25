@@ -286,3 +286,11 @@ input, textarea {
 .my-report .button-secondary{
     margin: 0;
 }
+.contact-form{
+    margin: 5% 0;
+}
+.contact-form > .btn-secondary {
+    justify-self: center;
+    display: flex;
+    margin: 1% 0px;
+}
