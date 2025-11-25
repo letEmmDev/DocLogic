@@ -22,6 +22,29 @@
             </div>
             {% block content %}{% endblock %}
         </main>
+        <!-- Bandeau RGPD -->
+        {% if not request.COOKIES.cookie_consent %}
+        <div id="cookie-banner" style="position:fixed;bottom:0;width:100%;background:#2a3a5e;color:#fff;padding:1rem;z-index:9999;text-align:center;">
+            Ce site utilise des cookies pour améliorer votre expérience. 
+            <button id="accept-cookies" style="margin-left:1rem;">Accepter</button>
+        </div>
+        <script>
+        document.getElementById('accept-cookies').onclick = function() {
+            document.cookie = "cookie_consent=true;path=/;max-age=31536000";
+            document.getElementById('cookie-banner').style.display = 'none';
+        };
+        </script>
+        {% endif %}
+        {% if request.COOKIES.cookie_consent %}
+    <!-- Exemple Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXX-X');
+        </script>
+    {% endif %}
         <script src="{% static 'js/navbar.js' %}"></script>
     </body>
 </html>

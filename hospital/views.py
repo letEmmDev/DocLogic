@@ -48,3 +48,6 @@ def doctor_list(request):
         "departments": departments,
         "selected_department": department_name or "all"
     })
+
+def cookie_consent(request):
+    return {'cookie_consent': request.COOKIES.get('cookie_consent')}

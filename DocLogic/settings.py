@@ -62,6 +62,11 @@ MIDDLEWARE = [
     "django_htmx.middleware.HtmxMiddleware",
 ]
 
+SESSION_COOKIE_SECURE = True      # Active en production (HTTPS)
+SESSION_COOKIE_HTTPONLY = True
+CSRF_COOKIE_SECURE = True         # Active en production (HTTPS)
+CSRF_COOKIE_HTTPONLY = True
+
 ROOT_URLCONF = 'DocLogic.urls'
 
 TEMPLATES = [
@@ -75,6 +80,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request',
             ],
         },
     },

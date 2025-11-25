@@ -74,3 +74,6 @@ def dashboard(request):
         return redirect('dashboard_patient')
     else:
         return redirect('admin_validation')
+    
+def cookie_consent(request):
+    return {'cookie_consent': request.COOKIES.get('cookie_consent')}

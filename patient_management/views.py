@@ -68,3 +68,6 @@ def patients_form(request, patient_id):
     patient = get_object_or_404(Patient, patient_id=patient_id)
     form = PatientsForm(instance=patient)
     return render(request, "patient_management/partials/patient_surgeries_form.html", {"form": form, "patient": patient})
+
+def cookie_consent(request):
+    return {'cookie_consent': request.COOKIES.get('cookie_consent')}
