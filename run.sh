@@ -1,2 +1,2 @@
 set -e
-gunicorn project.wsgi --log-file -k
+gunicorn DocLogic.wsgi --log-file -
