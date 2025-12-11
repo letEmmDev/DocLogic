@@ -13,6 +13,15 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 from dotenv import load_dotenv
 import os
+import environ
+
+# django-environ setup
+env = environ.Env(
+    # set casting, default value
+    DEBUG=(bool, False)
+)
+# Take environment variables from .env file
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -100,14 +109,7 @@ WSGI_APPLICATION = 'DocLogic.wsgi.application'
 
 # Deployment database configuration
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', 'doclogic'),
-        'USER': os.getenv('DB_USER', 'emmanuelramos'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'password'),
-        'HOST': os.getenv('DB_HOST', 'db'),
-        'PORT': os.getenv('DB_PORT', '5432'),
-    }
+    'default': env.db(default=f'sqlite:///{BASE_DIR / "db.sqlite3"}')
 }
 LOGGING = {
     'version': 1,
