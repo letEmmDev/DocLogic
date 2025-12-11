@@ -30,7 +30,7 @@ rootkey.csv
 .DS_Store
 
 # Migrations
-**/migrations/
+#**/migrations/
 !**/migrations/__init__.py
 
 # Node (if using npm/yarn for frontend)
